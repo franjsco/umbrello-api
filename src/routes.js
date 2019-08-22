@@ -1,5 +1,5 @@
 import express from 'express';
-import { getCurrentWeatherById, getForecastWeatherById } from './apiOWM';
+import { getCurrentWeatherById, getForecastWeatherById, getCityIdByName } from './api';
 
 const router = express.Router();
 
@@ -32,5 +32,11 @@ router.get('/forecast', (req, res) => {
     });
 });
 
+
+router.get('/search', (req, res) => {
+  getCityIdByName(req.query.city)
+    .then((obj) => res.json(obj))
+    .catch((err) => res.status(500).send(err));
+});
 
 export default router;
