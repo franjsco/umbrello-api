@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 
 app.get('*', (req, res) => {
   logger.error(`404 ${req.path}`);
-  res.send(404).send();
+  res.status(404).send();
 });
 
 app.listen(3000, () => {
