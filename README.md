@@ -1,6 +1,8 @@
 # umbrello-api
 
-Rest API for umbrello-bot
+Rest API for umbrello-bot.
+
+The weather information is based on [OpenWeatherMap API](https://openweathermap.org/api).
 
 **Technologies**:
 
@@ -15,8 +17,9 @@ Rest API for umbrello-bot
 3. Clone this repository.
 4. Install dependencies with `npm install`
 5. Create env file or set environment variables. (read "Environment variables" paragraph)
-6. Build with `npm run build`.
-7. Start the server with `npm run serve`.
+6. Configure the list of city id (read "OpenWeatherMap - List Of City ID")
+7. Build with `npm run build`.
+8. Start the server with `npm run serve`.
 
 
 ### Environment Variables.
@@ -31,6 +34,13 @@ DB_HOST=mongodb://host:port/db
 DB_USER=user
 DB_PASSWORD=password
 ```
+
+### OpenWeatherMap - List Of City ID
+
+1. Download [city.list.min.json.gz](http://bulk.openweathermap.org/sample/city.list.min.json.gz)
+2. Extract the json.
+3. Import the json into MongoDB (collection: `umbrello_cities`).
+
 
 ## License
 GPLv3
