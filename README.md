@@ -1,6 +1,6 @@
 # umbrello-api
 
-A rest API for umbrello-bot
+Rest API for umbrello-bot
 
 **Technologies**:
 
