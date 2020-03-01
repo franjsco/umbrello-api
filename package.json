@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frsposito/umbrello-api.git"
+    "url": "git+https://github.com/franjsco/umbrello-api.git"
   },
-  "author": "frsposito",
+  "author": "franjsco",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
     "@babel/cli": "^7.5.5",

@@ -46,4 +46,4 @@ DB_PASSWORD=password
 GPLv3
 
 ---
-Made with ❤️ by Francesco Esposito ([@frsposito](https://github.com/frsposito))
+Made with ❤️ by Francesco Esposito ([@franjsco](https://github.com/franjsco))
